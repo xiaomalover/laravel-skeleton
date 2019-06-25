@@ -15,7 +15,7 @@
     <copyright>Copyright 2015</copyright>
     <tags>bootstrap bootstrap-fileinput</tags>
     <dependencies>
-      <dependency id="bootstrap" version="3.0.0" />
+      <dependency id="bootstrap" version="3.4.1" />
     </dependencies>
   </metadata>
 </package>
