@@ -13,7 +13,7 @@ $ git clone https://github.com/xiaomalover/laravel-skeleton.git && cd laravel-sk
 ```
 $ composer update
 ```
-3, Modify the database and email config in .env file
+3, Copy the .env.example file to .env and modify the database and email config in .env file
 
 4, Create database schema
 ```
