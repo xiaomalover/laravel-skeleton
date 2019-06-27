@@ -69,5 +69,6 @@
 	"Old Password": "原密码",
 	"Old password verification does not pass.": "旧密码验证不通过。",
 	"Change the login password of the current account.": "修改当前登录用户的密码。",
-	"Account Info": "帐户信息"
+	"Account Info": "帐户信息",
+	"Frontend": "前端网站"
 }

@@ -416,7 +416,7 @@ Smith Doe
                     <div class="right-notification">
                         <ul class="notification-menu">
                             <li>
-
+                                <i class="fa fa-bookmark-o" style="margin-right: -10px;"></i><a href="/" target="_blank"> {{__('Frontend')}}</a>
                             </li>
 
                             <li>
