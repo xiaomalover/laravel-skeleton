@@ -213,5 +213,24 @@
 		$.cookie('limit', $(this).val());
 		location.reload();
 	});
-    
+
+    //Boxed layout
+    jQuery('.sb-toggle-right').click(function(){
+        var body = jQuery('body');
+
+        if(body.hasClass('boxed-view')){
+            $("#boxed-logo").removeAttr("display");
+            body.addClass('sticky-header');
+            body.removeClass('boxed-view');
+            $("#container").removeClass('container');
+            $.removeCookie('boxed', {path:'/'});
+        }else{
+            $("#boxed-logo").attr("style", "");
+            body.removeClass('sticky-header');
+            body.addClass('boxed-view');
+            $("#container").addClass('container');
+            $.cookie('boxed',  true, {path:'/'});
+        }
+    });
+
 })(jQuery);
