@@ -2,6 +2,10 @@ Laravel Skeleton
 ===================================
 This is a skeleton application based on laravel, you can use it to build you own web site system.
 
+Demo
+===================================
+Frontend: http://l.mym.pub
+Backend: http://l.mym.pub/admin    account:  admin   password:  123456
 
 Installation
 --------
