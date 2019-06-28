@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Mosaddek">
-    <link rel="shortcut icon" href="#" type="image/png">
+    <link rel="shortcut icon" href="{{ asset('slicklab/img/ico/favicon.png') }}" type="image/png">
 
     <title>@yield('title')</title>
 
@@ -33,9 +33,9 @@
 </head>
 
 @if (@$_COOKIE['boxed'])
-    <body class="@if (@$_COOKIE['sidebar_collapsed'])sidebar-collapsed @endif boxed-view" style="">
+    <body class="@if (@$_COOKIE['sidebar_collapsed'])sidebar-collapsed @endif boxed-view" id="master-body">
 @else
-    <body class="sticky-header @if (@$_COOKIE['sidebar_collapsed'])sidebar-collapsed @endif" style="">
+    <body class="sticky-header @if (@$_COOKIE['sidebar_collapsed'])sidebar-collapsed @endif" id="master-body">
 @endif
 
 <section>
@@ -603,6 +603,16 @@ Smith Doe
     <script>
         (function () {
             var $errors = {};
+
+            $(".body").niceScroll({
+                touchbehavior:true,     //是否是触摸式滚动效果
+                cursorcolor:"rgb(169, 121, 209)",     //滚动条的颜色值
+                cursoropacitymax:0.6,   //滚动条的透明度值
+                cursorwidth:7,         //滚动条的宽度值
+                //background:"#00F",  //滚动条的背景色，默认是透明的
+                autohidemode:true,      //滚动条是否是自动隐藏，默认值为 true
+                width:"5px"
+            });
 
             @foreach(Session::get('errors')->getMessages() as $field => $messages)
                 $errors['{{ $field }}'] = {

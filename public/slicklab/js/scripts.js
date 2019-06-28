@@ -233,4 +233,14 @@
         }
     });
 
+    $("#master-body").niceScroll({
+        touchbehavior:true,     //是否是触摸式滚动效果
+        cursorcolor:"rgb(169, 121, 209)",     //滚动条的颜色值
+        cursoropacitymax:0.6,   //滚动条的透明度值
+        cursorwidth:7,         //滚动条的宽度值
+        //background:"#00F",  //滚动条的背景色，默认是透明的
+        autohidemode:true,      //滚动条是否是自动隐藏，默认值为 true
+        width:"5px"
+    });
+
 })(jQuery);
